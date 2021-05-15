@@ -1,0 +1,15 @@
+package demo
+
+object demo {
+
+  def volume(radius:Int):Double={
+    var vol:Double = 0
+    val pi:Double = (22).toDouble./(7):Double
+    val r3 = scala.math.pow(radius, 3)
+    vol = 4/3*pi*r3
+    return vol
+  }
+  def main(args: Array[String]): Unit = {
+    println(volume(2))
+  }
+}
